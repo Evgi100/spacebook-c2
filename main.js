@@ -66,7 +66,6 @@ function renderView() {
             var index=$(this).closest('.post').index();
             var commentID = $(this).closest('.comment').index();
             posts[index].comments.splice(commentID, 1);
-            console.log(posts[index].comments);
             renderView();
 
          $(".shareLink").click(function() {
