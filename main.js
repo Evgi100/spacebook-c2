@@ -58,7 +58,6 @@ function renderView() {
         $('.remove').on('click', function ()  {
             var pId = $(this).parent().index()
             posts.splice(pId, 1);
-            console.log(posts);
             renderView();
         });
 
